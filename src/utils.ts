@@ -12,7 +12,6 @@ export function isFunction(fun: any): boolean {
 export function isString(text: any): boolean {
   return !isNil(text) && (typeof text === 'string' || text instanceof String)
 }
-
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
 export function isNil(value: any): boolean {
   return value === undefined || value === null

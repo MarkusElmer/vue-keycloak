@@ -1,4 +1,8 @@
-export default {
+// rollup.config.js
+import { defineConfig } from 'rollup';
+
+export default defineConfig({
+  /* your config */
   input: 'dist-transpiled/index.js',
   output: [
     {
@@ -16,4 +20,4 @@ export default {
     },
   ],
   external: ['keycloak-js', 'jwt-decode', 'vue'],
-}
+});
